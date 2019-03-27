@@ -1,0 +1,11 @@
+menu "BigBro configuration"
+
+    config BIGBRO_MINIMUM_RSSI
+        int "Mgmt frame minimum RSSI"
+        depends on FAST_SCAN_THRESHOLD
+        range -127 0
+        default -127
+        help
+            RSSI is use to measure the signal
+
+endmenu
